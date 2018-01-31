@@ -1,192 +1,192 @@
 [submodule "lookaside/java-1.8.0-openjdk"]
 	path = lookaside/java-1.8.0-openjdk
-	url = ../lookaside_java-1.8.0-openjdk.git
+	url = https://github.com/ojdkbuild/lookaside_java-1.8.0-openjdk.git
 [submodule "deps/freetype"]
 	path = deps/freetype
-	url = ../deps_freetype.git
+	url = https://github.com/ojdkbuild/deps_freetype.git
 [submodule "tools/bootjdk7"]
 	path = tools/bootjdk7
-	url = ../tools_bootjdk7.git
+	url = https://github.com/ojdkbuild/tools_bootjdk7.git
 [submodule "tools/cmake"]
 	path = tools/cmake
-	url = ../tools_cmake.git
+	url = https://github.com/ojdkbuild/tools_cmake.git
 [submodule "tools/cygwin"]
 	path = tools/cygwin
-	url = ../tools_cygwin.git
+	url = https://github.com/ojdkbuild/tools_cygwin.git
 [submodule "tools/make"]
 	path = tools/make
-	url = ../tools_make.git
+	url = https://github.com/ojdkbuild/tools_make.git
 [submodule "tools/pkgconfig"]
 	path = tools/pkgconfig
-	url = ../tools_pkgconfig.git
+	url = https://github.com/ojdkbuild/tools_pkgconfig.git
 [submodule "tools/toolchain/directx"]
 	path = tools/toolchain/directx
-	url = ../tools_toolchain_directx.git
+	url = https://github.com/ojdkbuild/tools_toolchain_directx.git
 [submodule "tools/toolchain/msvcr100"]
 	path = tools/toolchain/msvcr100
-	url = ../tools_toolchain_msvcr100.git
+	url = https://github.com/ojdkbuild/tools_toolchain_msvcr100.git
 [submodule "tools/toolchain/sdk71"]
 	path = tools/toolchain/sdk71
-	url = ../tools_toolchain_sdk71.git
+	url = https://github.com/ojdkbuild/tools_toolchain_sdk71.git
 [submodule "tools/toolchain/vs2010e"]
 	path = tools/toolchain/vs2010e
-	url = ../tools_toolchain_vs2010e.git
+	url = https://github.com/ojdkbuild/tools_toolchain_vs2010e.git
 [submodule "tools/zip"]
 	path = tools/zip
-	url = ../tools_zip.git
+	url = https://github.com/ojdkbuild/tools_zip.git
 [submodule "lookaside/freetype"]
 	path = lookaside/freetype
-	url = ../lookaside_freetype.git
+	url = https://github.com/ojdkbuild/lookaside_freetype.git
 [submodule "lookaside/zlib"]
 	path = lookaside/zlib
-	url = ../lookaside_zlib.git
+	url = https://github.com/ojdkbuild/lookaside_zlib.git
 [submodule "deps/zlib"]
 	path = deps/zlib
-	url = ../deps_zlib.git
+	url = https://github.com/ojdkbuild/deps_zlib.git
 [submodule "lookaside/ca-certificates"]
 	path = lookaside/ca-certificates
-	url = ../lookaside_ca-certificates.git
+	url = https://github.com/ojdkbuild/lookaside_ca-certificates.git
 [submodule "lookaside/tzdata"]
 	path = lookaside/tzdata
-	url = ../lookaside_tzdata.git
+	url = https://github.com/ojdkbuild/lookaside_tzdata.git
 [submodule "lookaside/nspr"]
 	path = lookaside/nspr
-	url = ../lookaside_nspr.git
+	url = https://github.com/ojdkbuild/lookaside_nspr.git
 [submodule "lookaside/nss"]
 	path = lookaside/nss
-	url = ../lookaside_nss.git
+	url = https://github.com/ojdkbuild/lookaside_nss.git
 [submodule "deps/nss"]
 	path = deps/nss
-	url = ../deps_nss.git
+	url = https://github.com/ojdkbuild/deps_nss.git
 [submodule "lookaside/nss-util"]
 	path = lookaside/nss-util
-	url = ../lookaside_nss-util.git
+	url = https://github.com/ojdkbuild/lookaside_nss-util.git
 [submodule "lookaside/dejavu-fonts"]
 	path = lookaside/dejavu-fonts
-	url = ../lookaside_dejavu-fonts.git
+	url = https://github.com/ojdkbuild/lookaside_dejavu-fonts.git
 [submodule "tools/wix"]
 	path = tools/wix
-	url = ../tools_wix.git
+	url = https://github.com/ojdkbuild/tools_wix.git
 [submodule "tools/wixgen"]
 	path = tools/wixgen
-	url = ../tools_wixgen.git
+	url = https://github.com/ojdkbuild/tools_wixgen.git
 [submodule "lookaside/giflib"]
 	path = lookaside/giflib
-	url = ../lookaside_giflib.git
+	url = https://github.com/ojdkbuild/lookaside_giflib.git
 [submodule "deps/giflib"]
 	path = deps/giflib
-	url = ../deps_giflib.git
+	url = https://github.com/ojdkbuild/deps_giflib.git
 [submodule "lookaside/libpng"]
 	path = lookaside/libpng
-	url = ../lookaside_libpng.git
+	url = https://github.com/ojdkbuild/lookaside_libpng.git
 [submodule "deps/libpng"]
 	path = deps/libpng
-	url = ../deps_libpng.git
+	url = https://github.com/ojdkbuild/deps_libpng.git
 [submodule "tools/nasm"]
 	path = tools/nasm
-	url = ../tools_nasm.git
+	url = https://github.com/ojdkbuild/tools_nasm.git
 [submodule "lookaside/libjpeg-turbo"]
 	path = lookaside/libjpeg-turbo
-	url = ../lookaside_libjpeg-turbo.git
+	url = https://github.com/ojdkbuild/lookaside_libjpeg-turbo.git
 [submodule "deps/libjpeg-turbo"]
 	path = deps/libjpeg-turbo
-	url = ../deps_libjpeg-turbo.git
+	url = https://github.com/ojdkbuild/deps_libjpeg-turbo.git
 [submodule "lookaside/curl"]
 	path = lookaside/curl
-	url = ../lookaside_curl.git
+	url = https://github.com/ojdkbuild/lookaside_curl.git
 [submodule "lookaside/jansson"]
 	path = lookaside/jansson
-	url = ../lookaside_jansson.git
+	url = https://github.com/ojdkbuild/lookaside_jansson.git
 [submodule "lookaside/openssl"]
 	path = lookaside/openssl
-	url = ../lookaside_openssl.git
+	url = https://github.com/ojdkbuild/lookaside_openssl.git
 [submodule "lookaside/popt"]
 	path = lookaside/popt
-	url = ../lookaside_popt.git
+	url = https://github.com/ojdkbuild/lookaside_popt.git
 [submodule "tools/perl"]
 	path = tools/perl
-	url = ../tools_perl.git
+	url = https://github.com/ojdkbuild/tools_perl.git
 [submodule "deps/curl"]
 	path = deps/curl
-	url = ../deps_curl.git
+	url = https://github.com/ojdkbuild/deps_curl.git
 [submodule "deps/openssl"]
 	path = deps/openssl
-	url = ../deps_openssl.git
+	url = https://github.com/ojdkbuild/deps_openssl.git
 [submodule "deps/popt"]
 	path = deps/popt
-	url = ../deps_popt.git
+	url = https://github.com/ojdkbuild/deps_popt.git
 [submodule "contrib/update-notifier"]
 	path = contrib/update-notifier
-	url = ../contrib_update-notifier.git
+	url = https://github.com/ojdkbuild/contrib_update-notifier.git
 [submodule "tools/toolchain/vs2013e"]
 	path = tools/toolchain/vs2013e
-	url = ../tools_toolchain_vs2013e.git
+	url = https://github.com/ojdkbuild/tools_toolchain_vs2013e.git
 [submodule "lookaside/java-9-openjdk"]
 	path = lookaside/java-9-openjdk
-	url = ../lookaside_java-9-openjdk.git
+	url = https://github.com/ojdkbuild/lookaside_java-9-openjdk.git
 [submodule "tools/bootjdk8"]
 	path = tools/bootjdk8
-	url = ../tools_bootjdk8.git
+	url = https://github.com/ojdkbuild/tools_bootjdk8.git
 [submodule "tools/cygwin64"]
 	path = tools/cygwin64
-	url = ../tools_cygwin64.git
+	url = https://github.com/ojdkbuild/tools_cygwin64.git
 [submodule "tools/ant182"]
 	path = tools/ant182
-	url = ../tools_ant182.git
+	url = https://github.com/ojdkbuild/tools_ant182.git
 [submodule "tools/gradle18"]
 	path = tools/gradle18
-	url = ../tools_gradle18.git
+	url = https://github.com/ojdkbuild/tools_gradle18.git
 [submodule "tools/toolchain/directx-june2010"]
 	path = tools/toolchain/directx-june2010
-	url = ../tools_toolchain_directx-june2010.git
+	url = https://github.com/ojdkbuild/tools_toolchain_directx-june2010.git
 [submodule "lookaside/openjfx"]
 	path = lookaside/openjfx
-	url = ../lookaside_openjfx.git
+	url = https://github.com/ojdkbuild/lookaside_openjfx.git
 [submodule "deps/openjfx"]
 	path = deps/openjfx
-	url = ../deps_openjfx.git
+	url = https://github.com/ojdkbuild/deps_openjfx.git
 [submodule "lookaside/icedtea-web"]
 	path = lookaside/icedtea-web
-	url = ../lookaside_icedtea-web.git
+	url = https://github.com/ojdkbuild/lookaside_icedtea-web.git
 [submodule "lookaside/tagsoup"]
 	path = lookaside/tagsoup
-	url = ../lookaside_tagsoup.git
+	url = https://github.com/ojdkbuild/lookaside_tagsoup.git
 [submodule "lookaside/rhino"]
 	path = lookaside/rhino
-	url = ../lookaside_rhino.git
+	url = https://github.com/ojdkbuild/lookaside_rhino.git
 [submodule "deps/icedtea-web"]
 	path = deps/icedtea-web
-	url = ../deps_icedtea-web.git
+	url = https://github.com/ojdkbuild/deps_icedtea-web.git
 [submodule "deps/tagsoup"]
 	path = deps/tagsoup
-	url = ../deps_tagsoup.git
+	url = https://github.com/ojdkbuild/deps_tagsoup.git
 [submodule "deps/rhino"]
 	path = deps/rhino
-	url = ../deps_rhino.git
+	url = https://github.com/ojdkbuild/deps_rhino.git
 [submodule "contrib/itw-launcher"]
 	path = contrib/itw-launcher
-	url = ../contrib_itw-launcher.git
+	url = https://github.com/ojdkbuild/contrib_itw-launcher.git
 [submodule "upstream/openjfx-8u"]
 	path = upstream/openjfx-8u
-	url = ../upstream_openjfx-8u.git
+	url = https://github.com/ojdkbuild/upstream_openjfx-8u.git
 [submodule "tools/python27"]
 	path = tools/python27
-	url = ../tools_python27.git
+	url = https://github.com/ojdkbuild/tools_python27.git
 [submodule "tools/ruby"]
 	path = tools/ruby
-	url = ../tools_ruby.git
+	url = https://github.com/ojdkbuild/tools_ruby.git
 [submodule "tools/cmake33"]
 	path = tools/cmake33
-	url = ../tools_cmake33.git
+	url = https://github.com/ojdkbuild/tools_cmake33.git
 [submodule "tools/gperf"]
 	path = tools/gperf
-	url = ../tools_gperf.git
+	url = https://github.com/ojdkbuild/tools_gperf.git
 [submodule "tools/toolchain/sdk10_1607"]
 	path = tools/toolchain/sdk10_1607
-	url = ../tools_toolchain_sdk10_1607.git
+	url = https://github.com/ojdkbuild/tools_toolchain_sdk10_1607.git
 [submodule "tools/toolchain/vs2017bt"]
 	path = tools/toolchain/vs2017bt
-	url = ../tools_toolchain_vs2017bt.git
+	url = https://github.com/ojdkbuild/tools_toolchain_vs2017bt.git
 [submodule "external/jansson"]
 	path = external/jansson
-	url = ../external_jansson.git
+	url = https://github.com/ojdkbuild/external_jansson.git
