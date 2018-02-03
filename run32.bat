@@ -35,7 +35,7 @@ if exist build exit /b 1
 mkdir build || exit /b 1
 pushd build || exit /b 1
 
-cmake "%OJDKBUILD_DIR%/src/java-1.8.0-openjdk" -Dopenjdk_32-BIT=ON -G "NMake Makefiles" || exit /b 1
+cmake "%OJDKBUILD_DIR%/src/java-1.8.0-openjdk" -Dopenjdk_32_BIT=ON -G "NMake Makefiles" || exit /b 1
 nmake zip VERBOSE=1 || exit /b 1
 
 popd || exit /b 1
