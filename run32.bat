@@ -1,5 +1,6 @@
 @echo off
 rem Copyright 2016, akashche at redhat.com
+rem Copyright 2018, udo.rader@bestsolution.at
 rem
 rem Licensed under the Apache License, Version 2.0 (the "License");
 rem you may not use this file except in compliance with the License.
@@ -12,6 +13,8 @@ rem distributed under the License is distributed on an "AS IS" BASIS,
 rem WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 rem See the License for the specific language governing permissions and
 rem limitations under the License.
+rem
+rem Builds a 32bit version of the JDK8 and the JRE8 
 
 @echo off
 
@@ -35,8 +38,9 @@ if exist build exit /b 1
 mkdir build || exit /b 1
 pushd build || exit /b 1
 
-cmake "%OJDKBUILD_DIR%/src/java-1.8.0-openjdk" -Dopenjdk_32-BIT=ON -G "NMake Makefiles" || exit /b 1
+cmake "%OJDKBUILD_DIR%/src/java-1.8.0-openjdk" -Dopenjdk_32_BIT=ON -G "NMake Makefiles" || exit /b 1
 nmake zip VERBOSE=1 || exit /b 1
+nmake zip_jre VERBOSE=1 || exit /b 1
 
 popd || exit /b 1
-echo OJDKBUILD_FINISH_SUCCESS
+echo OJDKBUILD32_FINISH_SUCCESS
