@@ -27,6 +27,14 @@ else
     BOOTJDK=${CMAKE_CURRENT_LIST_DIR}/../../tools/bootjdk8
 fi
 
+# setting max-cores to 0 enables all cores
+if [ "ON" == "${USE_MAX_CORES}" ] ; then
+	CORES_TO_USE=0
+else
+	CORES_TO_USE=1
+fi
+
+
 bash ${CMAKE_CURRENT_LIST_DIR}/../../lookaside/java-9-openjdk/configure \
     --enable-unlimited-crypto=${${PROJECT_NAME}_UNLIMITED_CRYPTO_FLAG} \
     --disable-hotspot-gtest \
@@ -46,7 +54,7 @@ bash ${CMAKE_CURRENT_LIST_DIR}/../../lookaside/java-9-openjdk/configure \
     --with-version-patch=${${PROJECT_NAME}_RPMBUILD} \
     --with-version-build=${${PROJECT_NAME}_BUILD} \
     --with-version-opt="" \
-    --with-num-cores=1 \
+    --with-num-cores=$CORES_TO_USE \
     2>&1
 
 if [ "OFF" == "${${PROJECT_NAME}_DEV_MODE}" ]; then

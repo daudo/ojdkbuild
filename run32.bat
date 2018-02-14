@@ -22,6 +22,7 @@ rem shortcuts from script directory
 set BAD_SLASH_SCRIPT_DIR=%~dp0
 set SCRIPT_DIR=%BAD_SLASH_SCRIPT_DIR:\=/%
 set OJDKBUILD_DIR=%SCRIPT_DIR%
+set USE_MAX_CORES="ON"
 
 call "%OJDKBUILD_DIR%/resources/scripts/modules.bat"
 if errorlevel 1 exit /b 1

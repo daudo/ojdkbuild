@@ -23,6 +23,13 @@ else
     BOOTJDK=${CMAKE_CURRENT_LIST_DIR}/../../tools/bootjdk7
 fi
 
+# setting max-cores to 0 enables all cores
+if [ "1" == "${USE_MAX_CORES}" ] ; then
+	CORES_TO_USE=0
+else
+	CORES_TO_USE=1
+fi
+
 bash ${CMAKE_CURRENT_LIST_DIR}/../../lookaside/java-1.8.0-openjdk/configure \
     --enable-unlimited-crypto=${${PROJECT_NAME}_UNLIMITED_CRYPTO_FLAG} \
     --enable-debug-symbols=yes \
@@ -34,7 +41,7 @@ bash ${CMAKE_CURRENT_LIST_DIR}/../../lookaside/java-1.8.0-openjdk/configure \
     --with-msvcr-dll=${CMAKE_CURRENT_LIST_DIR}/../../tools/toolchain/msvcr100/${${PROJECT_NAME}_MSVCR_PATH}/msvcr100${${PROJECT_NAME}_DEBUG_DLL_POSTFIX}.dll \
     --with-freetype-include=${CMAKE_CURRENT_LIST_DIR}/../../lookaside/freetype/include/ \
     --with-freetype-lib=${CMAKE_CURRENT_BINARY_DIR}/bin \
-    --with-num-cores=1 \
+    --with-num-cores=$CORES_TO_USE \
     --with-milestone=${${PROJECT_NAME}_RPMBUILD}-${${PROJECT_NAME}_MILESTONE} \
     --with-update-version=${${PROJECT_NAME}_UPDATE} \
     --with-build-number=b${${PROJECT_NAME}_BUILD} \
