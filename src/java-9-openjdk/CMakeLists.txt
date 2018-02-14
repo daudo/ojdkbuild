@@ -73,6 +73,7 @@ set ( ${PROJECT_NAME}_BOOT_JDK_DIR ${CMAKE_CURRENT_BINARY_DIR}/java-9-openjdk-bo
 set ( ${PROJECT_NAME}_IMAGE ${${PROJECT_NAME}_BASE}.${${PROJECT_NAME}_ARCH} CACHE INTERNAL "" )
 set ( ${PROJECT_NAME}_SRCBUNDLE ${${PROJECT_NAME}_BASE}.src CACHE INTERNAL "" )
 set ( ${PROJECT_NAME}_DEBUGBUNDLE ${${PROJECT_NAME}_IMAGE}.debuginfo CACHE INTERNAL "" )
+set ( ${PROJECT_NAME}_JREBUNDLE ${${PROJECT_NAME}_IMAGE}.jre CACHE INTERNAL "" )
 
 # copy and other helpers
 set ( ${PROJECT_NAME}_RBCFLAGS /nfl /ndl /njh /njs /nc /ns /np CACHE INTERNAL "" )
@@ -170,6 +171,14 @@ add_custom_target ( image_debug
         COMMENT "Creating debug image ..." )
 add_dependencies ( image_debug preimage )
 
+add_custom_target ( image_jre
+        COMMAND ${CMAKE_COMMAND} -E remove_directory ${${PROJECT_NAME}_JREBUNDLE}
+        # recursively copy everything within the JRE directory
+        COMMAND (robocopy ${${PROJECT_NAME}_IMAGE}/jre ${${PROJECT_NAME}_JREBUNDLE} /E ${${PROJECT_NAME}_RBCFLAGS} ) ${${PROJECT_NAME}_RBCPOSTFIX}
+        WORKING_DIRECTORY ${CMAKE_CURRENT_BINARY_DIR}
+        COMMENT "Creating release JRE image ..." )
+add_dependencies ( image_jre image )
+
 add_custom_target ( debuginfo
         COMMAND ${${PROJECT_NAME}_TOOLS}/zip/zip.exe -qr${${PROJECT_NAME}_COMPRESS_LEVEL} ${${PROJECT_NAME}_DEBUGBUNDLE}.zip ${${PROJECT_NAME}_DEBUGBUNDLE}
         COMMAND (robocopy ${CMAKE_CURRENT_BINARY_DIR} ${${PROJECT_NAME}_DEST_DIR} ${${PROJECT_NAME}_DEBUGBUNDLE}.zip /mov ${${PROJECT_NAME}_RBCFLAGS} ) ${${PROJECT_NAME}_RBCPOSTFIX}
@@ -190,6 +199,13 @@ add_custom_target ( zip_debug
         WORKING_DIRECTORY ${CMAKE_CURRENT_BINARY_DIR}
         COMMENT "Creating ZIP debug bundle ..." )
 add_dependencies ( zip_debug image_debug )
+
+add_custom_target ( zip_jre
+        COMMAND ${${PROJECT_NAME}_TOOLS}/zip/zip.exe -qr${${PROJECT_NAME}_COMPRESS_LEVEL} ${${PROJECT_NAME}_JREBUNDLE}.zip ${${PROJECT_NAME}_JREBUNDLE}
+        COMMAND (robocopy ${CMAKE_CURRENT_BINARY_DIR} ${${PROJECT_NAME}_DEST_DIR} ${${PROJECT_NAME}_JREBUNDLE}.zip /mov ${${PROJECT_NAME}_RBCFLAGS} ) ${${PROJECT_NAME}_RBCPOSTFIX}
+        WORKING_DIRECTORY ${CMAKE_CURRENT_BINARY_DIR}
+        COMMENT "Creating ZIP JRE bundle ..." )
+add_dependencies ( zip_jre image_jre )
 
 add_custom_target ( installer
         COMMAND ${CMAKE_COMMAND} -E remove ${${PROJECT_NAME}_IMAGE}.wxs
