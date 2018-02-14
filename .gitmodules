@@ -100,9 +100,6 @@
 [submodule "lookaside/openssl"]
 	path = lookaside/openssl
 	url = https://github.com/ojdkbuild/lookaside_openssl.git
-[submodule "lookaside/popt"]
-	path = lookaside/popt
-	url = https://github.com/ojdkbuild/lookaside_popt.git
 [submodule "tools/perl"]
 	path = tools/perl
 	url = https://github.com/ojdkbuild/tools_perl.git
@@ -190,3 +187,6 @@
 [submodule "external/jansson"]
 	path = external/jansson
 	url = https://github.com/ojdkbuild/external_jansson.git
+[submodule "external/popt"]
+	path = external/popt
+	url = https://github.com/ojdkbuild/external_popt.git
