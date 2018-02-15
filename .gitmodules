@@ -109,9 +109,6 @@
 [submodule "deps/openssl"]
 	path = deps/openssl
 	url = https://github.com/ojdkbuild/deps_openssl.git
-[submodule "deps/popt"]
-	path = deps/popt
-	url = https://github.com/ojdkbuild/deps_popt.git
 [submodule "contrib/update-notifier"]
 	path = contrib/update-notifier
 	url = https://github.com/ojdkbuild/contrib_update-notifier.git

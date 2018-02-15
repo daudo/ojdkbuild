@@ -28,7 +28,7 @@ else
 fi
 
 # setting max-cores to 0 enables all cores
-if [ "ON" == "${USE_MAX_CORES}" ] ; then
+if [ "1" == "${USE_MAX_CORES}" ] ; then
 	CORES_TO_USE=0
 else
 	CORES_TO_USE=1
