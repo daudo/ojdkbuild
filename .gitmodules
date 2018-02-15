@@ -188,5 +188,5 @@
 	path = external/jansson
 	url = https://github.com/ojdkbuild/external_jansson.git
 [submodule "external/popt"]
-    path = external/po
+    path = external/popt
 	url = https://github.com/ojdkbuild/external_popt.git
