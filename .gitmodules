@@ -100,6 +100,9 @@
 [submodule "lookaside/openssl"]
 	path = lookaside/openssl
 	url = https://github.com/ojdkbuild/lookaside_openssl.git
+[submodule "lookaside/popt"]
+	path = lookaside/popt
+	url = https://github.com/ojdkbuild/lookaside_popt.git
 [submodule "tools/perl"]
 	path = tools/perl
 	url = https://github.com/ojdkbuild/tools_perl.git
@@ -109,9 +112,6 @@
 [submodule "deps/openssl"]
 	path = deps/openssl
 	url = https://github.com/ojdkbuild/deps_openssl.git
-[submodule "deps/popt"]
-	path = deps/popt
-	url = https://github.com/ojdkbuild/deps_popt.git
 [submodule "contrib/update-notifier"]
 	path = contrib/update-notifier
 	url = https://github.com/ojdkbuild/contrib_update-notifier.git
@@ -188,5 +188,5 @@
 	path = external/jansson
 	url = https://github.com/ojdkbuild/external_jansson.git
 [submodule "external/popt"]
-	path = external/popt
+    path = external/po
 	url = https://github.com/ojdkbuild/external_popt.git
